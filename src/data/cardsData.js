@@ -3,31 +3,30 @@ export const cardsData = [
     id: 1,
     title: "Mountain Adventure",
     description:
-      "Explore the breathtaking peaks and valleys of the Rocky Mountains. Perfect for hiking enthusiasts.",
-    image:
-      "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop",
-    price: "MWK44299",
+      "Explore the majestic slopes and the glorious glance of Mulanje mountain with a fresh breeze.",
+    image: "https://www.outlooktravelmag.com/media/Malawi-main-image.webp",
+    price: "MWK2450000",
     rating: 4.8,
     category: "Adventure",
   },
   {
     id: 2,
-    title: "Beach Paradise",
+    title: "Thumbi Island",
     description:
-      "Relax on pristine white sand beaches with crystal clear waters.",
+      "This is a place you witness the beauty of Lake Malawi cichrids.",
     image:
-      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=400&h=300&fit=crop",
-    price: "MWK10450",
+      "https://thumbiviewlodge.com/wp-content/uploads/2019/10/Gallery-Featured-Image.jpg",
+    price: "MWK900000",
     rating: 4.9,
     category: "Relaxation",
   },
   {
     id: 3,
-    title: "City Explorer",
+    title: "A night in Blantyre CITY",
     description:
-      "Discover the vibrant culture, cuisine, and nightlife of major cities around the world.",
+      "Discover the vibrant culture, cuisine, and nightlife in Blantyre City.",
     // No image provided - will show placeholder
-    price: "MKW45000",
+    price: "MKW700000",
     rating: 4.5,
     category: "Urban",
   },
@@ -36,18 +35,17 @@ export const cardsData = [
     title: "Forest Retreat",
     // No description provided
     image:
-      "https://images.unsplash.com/photo-1511497584788-876760111969?w=400&h=300&fit=crop",
-    price: "MWK10199",
+      "https://www.malawi-info.net/info/articles/2175/images/bottom_images/1.jpg",
+    price: "MWK200000",
     rating: 4.7,
     category: "Nature",
   },
   {
     id: 5,
-    title: "Desert Safari",
-    description:
-      "Experience the vast dunes and stunning sunsets of the Arabian desert.",
+    title: "Wildlife Safari",
+    description: "Experience the wildlife and stunning sunsets of Majete.",
     image:
-      "https://images.unsplash.com/photo-1473580044384-7ba9967e16a0?w=400&h=300&fit=crop",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/83/6a/6b/img-20190202-wa0003-largejpg.jpg?w=800&h=500&s=1",
     // No price provided
     rating: 4.6,
     category: "Adventure",
