@@ -1,3 +1,8 @@
 @import "tailwindcss";
 
 /********** Custom Colors **********/
+:root {
+  --primary: #1e3a8a; /* Dark Blue */
+  --background: #e0f2fe; /* Light Blue */
+  --foreground: #1e293b; /* Dark Gray */
+}
