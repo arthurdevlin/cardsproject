@@ -1,15 +1,10 @@
-import Card from "./components/cards/Card";
-import CardImage from "./components/cards/CardImage";
-import CardHeader from "./components/cards/CardHeader";
-import CardTitle from "./components/cards/CardTitle";
-import CardBody from "./components/cards/CardBody";
+import Navbar from "./components/header/Navbar";
 
 function App() {
   return (
-    <section className="min-h-screen bg-gray-100 p-8">
-      
-
-    </section>
+    <div className="bg-background flex flex-col justify-center min-h-screen px-5">
+      <Navbar />
+    </div>
   );
 }
 
