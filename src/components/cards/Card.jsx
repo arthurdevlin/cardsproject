@@ -26,8 +26,8 @@ const Card = ({
 
   return (
     <div
-    //render the card component with the appropriate styles based on the props passed in
-      className={`${baseStyles} ${paddingStyles[padding]} ${className}${hoverStyles} ${variants[variant]}`}
+      // render the card component with the appropriate styles based on the props passed in
+      className={`${baseStyles} ${paddingStyles[padding]} ${className} ${hoverStyles} ${variants[variant]}`}
     >
       {children}
     </div>
@@ -35,4 +35,3 @@ const Card = ({
 };
 
 export default Card;
-  
