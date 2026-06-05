@@ -1,12 +1,12 @@
-
 import Navbar from "./components/header/Navbar";
-import Hero from "./components/hero section/Hero";
+import Hero from "./sections/hero section/Hero";
+
 
 function App() {
   return (
-    <div className="min-h-screen flex w-full">
+    <div className="min-h-screen flex w-full bg-blue-200">
       <Navbar />
-      <Hero/>
+      <Hero />
     </div>
   );
 }
