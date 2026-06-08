@@ -7,7 +7,7 @@ const Button = ({
   ...props
 }) => {
   const baseStyles =
-    "px-3 py-1 rounded-full transition-colors duration-300 whitespace-nowrap focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-white hover:transition-transform hover:duration-300 hover:scale-105 hover:shadow-lg";
+    "px-3 py-1 cursor-pointer rounded-full transition-colors duration-300 whitespace-nowrap focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-white hover:transition-transform hover:duration-300 hover:scale-105 hover:shadow-lg";
 
   const variants = {
     primary: "border border-white text-white hover:bg-white hover:text-black",

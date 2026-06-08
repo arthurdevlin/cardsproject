@@ -58,3 +58,5 @@ export const cardsData = [
     category: "Seasonal",
   },
 ];
+
+export default cardsData;
