@@ -24,6 +24,6 @@ body {
 p {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
-  color: #ffffff;
   line-height: 1.75;
+  font-size: 13px;
 }

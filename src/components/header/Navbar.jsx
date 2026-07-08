@@ -11,14 +11,12 @@ const navLinks = [
   { id: "about", label: "About", href: "#about" },
 ];
 
-
-
 const Navbar = () => {
   return (
     <>
       <nav className="fixed z-50 flex w-full items-center p-8 top-2">
         {/*Logo Section*/}
-        <div className="flex border px-1  text-white text-sm cursor-pointer hover:bg-white hover:text-black transition-colors duration-300">
+        <div className="flex  px-1  text-white text-sm cursor-pointer">
           Xplore <span className="font-extrabold text-2xl ">.MW</span>
           {/* <span className="relative group bg-blue-950 text-white p-1 text-lg rounded-2xl hover:bg-white hover:text-blue-950 hover:shadow-lg hover:shadow-blue-500/50 hover:transition-transform hover:duration-600 ">
             .MW
