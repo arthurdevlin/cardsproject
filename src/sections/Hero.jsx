@@ -1,4 +1,5 @@
 import Button from "../Button";
+import { FaLocationDot } from "react-icons/fa6";
 import GlassCard from "../components/cards/GlassCard";
 
 const Hero = () => {
@@ -28,13 +29,20 @@ const Hero = () => {
               Make every second count with adventure and fun
             </p>
             <div className="hidden  justify-between md:flex">
-              <div className="hidden md:flex flex-row gap-4 m-8">
-                <Button>Discover</Button>
-                <Button variant="secondary">Sign Up</Button>
-              </div>
+              <div className="hidden  md:flex flex-row gap-4 m-8">
+                <div className="relative m-4 space-x-8">
+                  <Button>Discover</Button>
+                  <Button variant="secondary">Sign Up</Button>
+                </div>
+              </div><div className="bg-amber-50/20 hidden sm:flex flex-col absolute right-0 rounded-3xl px-4 text-sm p-2">
+                
+                  <h1 className="justify-center w-50 flex font-bold">TRENDING EVENTS</h1>
+                  
 
-              <div>
-                <GlassCard></GlassCard>
+                 <h1 className="flex gap-3 p-2"><FaLocationDot/> Blues Bar & Restuarant</h1> 
+                 <p> <span className="font-bold">EVENT:</span> KucheKuche Launch</p>
+               
+                
               </div>
             </div>
           </div>

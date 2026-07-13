@@ -3,7 +3,7 @@ export const cardsData = [
     id: 1,
     title: "Mountain Adventure",
     description:
-      "Explore the majestic slopes and the glorious glance of Mulanje mountain with a fresh breeze.",
+      "Explore the majestic slopes and the glorious glance of Mulanje mountain.",
     image: "https://www.outlooktravelmag.com/media/Malawi-main-image.webp",
     price: "MWK2450000",
     rating: 4.8,

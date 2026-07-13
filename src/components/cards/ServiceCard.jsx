@@ -16,7 +16,7 @@ const ServiceCard = ({ item }) => {
   const Icon = iconMap[item.icon];
 
   return (
-    <GlassCard>
+    <GlassCard >
       {Icon ? Icon(iconClass) : null}
       <CardHeader>{item.title}</CardHeader>
       <CardBody className="flex flex-col items-center justify-center px-4">
