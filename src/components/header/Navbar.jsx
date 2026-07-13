@@ -1,6 +1,6 @@
 import { LuSearch, LuMenu } from "react-icons/lu";
 import { CiDark } from "react-icons/ci";
-import Button from "../Button";
+import Button from "../../Button";
 
 //mapped my navitems to an array of objects for better scalability and maintainability
 

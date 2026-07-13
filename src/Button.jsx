@@ -7,11 +7,13 @@ const Button = ({
   ...props
 }) => {
   const baseStyles =
-    "px-3 py-1 cursor-pointer rounded-full transition-colors duration-300 whitespace-nowrap focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-white hover:transition-transform hover:duration-300 hover:scale-105 hover:shadow-lg";
+    "px-6 py-1 cursor-pointer rounded-full transition-all duration-200 whitespace-nowrap focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-white hover:shadow-lg";
 
   const variants = {
     primary: "border border-white text-white hover:bg-white hover:text-black",
-    secondary: "bg-white text-black ",
+    secondary:
+      "bg-white text-black hover:bg-transparent hover:text-white hover:border hover:border-white",
+    variant: "ring-2 hover:text-white hover:bg-blue-900",
   };
 
   return (

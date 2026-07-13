@@ -1,84 +1,27 @@
-import GlassCard from "../components/cards/GlassCard";
-import CardHeader from "../components/cards/CardHeader";
-import CardBody from "../components/cards/CardBody";
-import Button from "../components/Button";
-
-import { FaCocktail } from "react-icons/fa";
-import { FaPersonSwimming } from "react-icons/fa6";
-import { FaHiking } from "react-icons/fa";
+import cardsInfo from "../data/cardsInfo";
+import ServiceCard from "../components/cards/ServiceCard";
 
 const Services = () => {
   return (
-    <div className="min-h-screen flex text-gray-900 items-center flex-col overflow-hidden  m-10 md:m-10 ">
-      {/**Text stuff */}
-      <div className="flex flex-col items-center justify-center gap-4">
-        <h1
-          className="
-       text-2xl md:text-4xl "
-        >
-          <h1> --- Quickly Xplore ---</h1>
+    <section className="min-h-screen flex text-gray-900 items-center flex-col overflow-hidden mt-15 md:m-10 py-8">
+      <div className="flex flex-col items-center justify-center mt-8 animate-fadeIn">
+        <h1 className="text-2xl md:text-4xl font-bold text-center text-gray-800">
+          Xplore our Services
         </h1>
-        Xperience Malawi with us
-        <p className="">
-          ...from a wild friday night to soul-soothing beaches of Lake Malawi
-        </p>
+        <span className="text-center text-sm">experience Malawi with us</span>
+        <span className="text-center text-sm md:text-lg text-gray-600 max-w-xl">
+          ...from a wild friday night to soul-soothing beaches of Lake Malawi...
+        </span>
       </div>
-      {/**Service cards */}
-      <div className="flex flex-col sm:flex-row sm:mx-2 items-center justify-center gap-4 mt-10">
-        <GlassCard>
-          <FaCocktail className="scale-150 opacity-70" />
 
-          <CardBody>
-            <p className="text-justify">
-              {" "}
-              from dusk till dawn! Xplore nights out with the best kids in
-              town.Best spots to ease the pressure with the best drinks MADE in
-              MALAWI
-            </p>
-            <Button
-              variant="secondary"
-              className="mt-4 border border-gray-300 text-sm opacity-70"
-            >
-              Learn More
-            </Button>
-          </CardBody>
-        </GlassCard>
-        <GlassCard>
-          <FaPersonSwimming className="scale-150 opacity-70" />
-          <CardBody>
-            <p className="text-justify">
-              {" "}
-              from dusk till dawn! Xplore nights out with the best kids in
-              town.Best spots to ease the pressure with the best drinks MADE in
-              MALAWI
-            </p>
-            <Button
-              variant="secondary"
-              className="mt-4 border border-gray-300 text-sm opacity-70"
-            >
-              Learn More
-            </Button>
-          </CardBody>
-        </GlassCard>
-        <GlassCard>
-          <FaHiking className="scale-150 opacity-70" />
-          <CardBody>
-            <p className="text-justify">
-              {" "}
-              from dusk till dawn! Xplore nights out with the best kids in
-              town.Best spots to ease the pressure with the best drinks MADE in
-              MALAWI
-            </p>
-            <Button
-              variant="secondary"
-              className="mt-4 border border-gray-300 text-sm opacity-70"
-            >
-              Learn More
-            </Button>
-          </CardBody>
-        </GlassCard>
+      <div className="w-full max-w-6xl px-4 mt-10">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 items-stretch">
+          {cardsInfo.map((item) => (
+            <ServiceCard item={item} key={item.id} />
+          ))}
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 

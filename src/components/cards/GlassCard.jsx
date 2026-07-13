@@ -14,7 +14,7 @@ const GlassCard = ({
   };
 
   const baseStyles =
-    "flex rounded-lg space-y-2 backdrop-blur px-3 py-4  rounded-xl bg-white/20 backdrop-blur-md border border-white/20 shadow-lg  flex-col items-center relative w-5/6 sm:w-20/21 ";
+    "flex border  rounded-lg space-y-2 backdrop-blur px-3 py-4  rounded-xl bg-white/20 backdrop-blur-md border border-white/20 shadow-lg  flex-col m-4 items-center relative w-5/6 sm:w-20/21 ";
 
   return (
     <div
