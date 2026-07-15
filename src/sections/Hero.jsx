@@ -9,7 +9,7 @@ const Hero = () => {
         {/**Hero wrpper*/}
         <div className="flex-col md:justify-center items-center mt-30 mx-8 ">
           {/**Hero text stuff */}
-          <h1 className="font-bold text-3xl sm:text-3xl md:text-5xl">
+          <h1 className="font-semibold text-3xl sm:text-3xl md:text-5xl">
             Welcome. <br />{" "}
             <span className=" text-gray-300 font-bold">Takulandirani</span>
             <span className="text-sm md:text-xl sm:text-lg font-bold">
@@ -34,15 +34,19 @@ const Hero = () => {
                   <Button>Discover</Button>
                   <Button variant="secondary">Sign Up</Button>
                 </div>
-              </div><div className="bg-amber-50/20 hidden sm:flex flex-col absolute right-0 rounded-3xl px-4 text-sm p-2">
-                
-                  <h1 className="justify-center w-50 flex font-bold">TRENDING EVENTS</h1>
-                  
+              </div>
+              <div className="bg-amber-50/20 hidden sm:flex flex-col absolute right-0 rounded-3xl px-4 text-sm p-2">
+                <h1 className="justify-center w-50 flex font-bold">
+                  TRENDING EVENTS
+                </h1>
 
-                 <h1 className="flex gap-3 p-2"><FaLocationDot/> Blues Bar & Restuarant</h1> 
-                 <p> <span className="font-bold">EVENT:</span> KucheKuche Launch</p>
-               
-                
+                <h1 className="flex gap-3 p-2">
+                  <FaLocationDot /> Blues Bar & Restuarant
+                </h1>
+                <p>
+                  {" "}
+                  <span className="font-bold">EVENT:</span> KucheKuche Launch
+                </p>
               </div>
             </div>
           </div>

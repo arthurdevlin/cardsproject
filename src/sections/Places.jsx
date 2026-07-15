@@ -20,13 +20,15 @@ const Blantyre = () => {
           {cardsData.map((item) => (
             <li key={item.id}>
               {" "}
-              <Card className=" gap-10 m-1">
+              <Card className=" gap-10 m-4">
+                <CardTitle>{item.category}</CardTitle>
                 <CardImage src={item.image}></CardImage>
-                
-                <CardFooter>{item.CardFooter}<CardTitle>{item.category}</CardTitle>
-                <CardHeader>{item.title}</CardHeader>
 
-                <CardBody>{item.description}</CardBody>
+                <CardFooter>
+                  {item.CardFooter}
+                  <CardHeader>{item.title}</CardHeader>
+
+                  <CardBody>{item.description}</CardBody>
                 </CardFooter>
               </Card>
             </li>

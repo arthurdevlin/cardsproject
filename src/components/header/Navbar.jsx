@@ -14,7 +14,7 @@ const navLinks = [
 const Navbar = () => {
   return (
     <>
-      <nav className="fixed z-50 flex w-full items-center p-8 top-2">
+      <nav className="fixed z-50 flex w-full items-center p-8 top-0">
         {/*Logo Section*/}
         <div className="flex  px-1  text-white text-sm cursor-pointer">
           Xplore <span className="font-extrabold text-2xl ">.MW</span>
