@@ -23,7 +23,7 @@ const Hero = () => {
           {" "}
           {/**Hero lg screen */}
           <div className="relative  sm:mt-10 md:30  m-4">
-            <p className="text-justify hidden md:flex italic">
+            <p className="text- hidden md:flex italic">
               Discover the beauty of Malawi with our expert guides and
               unforgettable experiences. <br />
               Make every second count with adventure and fun
@@ -46,18 +46,18 @@ const Hero = () => {
               </div>
             </div>
           </div>
-          {/* mobile glasscard */}
+          {/* mobile glasscard hero CTA */}
           <div className="md:hidden justify-center flex items-center">
-            <GlassCard className="justify-center items-center flex">
+            <GlassCard className="justify-center items-center flex sm:w-0">
               <div className="flex flex-col gap-4 m-4">
-                <p className="text-justify ">
+                <p className="text-center text-sm text-gray-200">
                   Discover the beauty of Malawi with our expert guides and
                   unforgettable experiences. <br />
                   Make every second count with adventure and fun
                 </p>
               </div>
-              <Button className="w-4/5 scale-80">Discover</Button>
-              <Button variant="secondary" className="w-4/5 scale-80">
+              <Button className="w-3/4 scale-80 overlay">Discover</Button>
+              <Button variant="secondary" className="w-3/4  scale-80">
                 Sign Up
               </Button>
             </GlassCard>

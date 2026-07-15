@@ -10,7 +10,7 @@ const Card = ({
   //variants for the card component that can be used to change the background color and border color
   const variants = {
     default: "bg-white border border-gray-200",
-    primary: "bg-blue-100 border border-blue-200",
+    primary: " flex pt-4 items-center border bg-white border-blue-200",
     success: "bg-green-100 border border-green-200",
     dark: "bg-gray-800 text-white border border-gray-700",
   };

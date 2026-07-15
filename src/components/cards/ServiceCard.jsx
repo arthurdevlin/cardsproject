@@ -1,4 +1,4 @@
-import GlassCard from "./GlassCard";
+import Card from "./Card";
 import CardHeader from "./CardHeader";
 import CardBody from "./CardBody";
 import Button from "../../Button";
@@ -16,19 +16,23 @@ const ServiceCard = ({ item }) => {
   const Icon = iconMap[item.icon];
 
   return (
-    <GlassCard >
+    <Card
+    
+      variant="primary"
+      className="justify-center flex-col items-center w-3/4 sm:w-full "
+    >
       {Icon ? Icon(iconClass) : null}
       <CardHeader>{item.title}</CardHeader>
       <CardBody className="flex flex-col items-center justify-center px-4">
-        <p className="text-justify text-sm text-gray-700">{item.description}</p>
+        <p className="text-center text-sm text-gray-700">{item.description}</p>
         <Button
-          variant="variant"
+          variant="wierd"
           className="mt-4 border border-gray-300 text-sm opacity-90"
         >
           {item.buttonText}
         </Button>
       </CardBody>
-    </GlassCard>
+    </Card>
   );
 };
 

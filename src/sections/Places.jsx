@@ -8,8 +8,8 @@ import CardTitle from "../components/cards/CardTitle";
 
 const Blantyre = () => {
   return (
-    <div className="bg-blue-950">
-      <div className="max-h-screen items-center relative min-h-screen md:w-full">
+    <div className="bg-blue-950 min-h-screen">
+      <div className=" items-center relative min-h-screen md:w-full">
         <div className="justify-center relative items-center flex flex-col pt-25 pb-4  text-white w-full px-4">
           <h1 className="sm:text-3xl text-xl md:text-4xl flex">
             Quick Pick Your first activity
@@ -20,13 +20,14 @@ const Blantyre = () => {
           {cardsData.map((item) => (
             <li key={item.id}>
               {" "}
-              <Card className=" gap-10 m-4">
-                <CardTitle>{item.category}</CardTitle>
+              <Card className=" gap-10 m-1">
+                <CardImage src={item.image}></CardImage>
+                
+                <CardFooter>{item.CardFooter}<CardTitle>{item.category}</CardTitle>
                 <CardHeader>{item.title}</CardHeader>
 
                 <CardBody>{item.description}</CardBody>
-                <CardImage src={item.image}></CardImage>
-                <CardFooter>{item.CardFooter}</CardFooter>
+                </CardFooter>
               </Card>
             </li>
           ))}
