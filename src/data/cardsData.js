@@ -33,7 +33,7 @@ export const cardsData = [
   {
     id: 4,
     title: "Forest Retreat",
-    // No description provided
+    description: "Visit the dense forest of the north, Chikangwa.",
     image:
       "https://www.malawi-info.net/info/articles/2175/images/bottom_images/1.jpg",
     price: "MWK200000",
@@ -55,7 +55,10 @@ export const cardsData = [
     title: "Winter Wonderland",
     // Minimal data - only title
     price: "MWK15000",
-    category: "Seasonal",
+    category: "Culture",
+    image:"",
+    description:
+      "Watch the traditional dances offered by the rich cultures of Malawi",
   },
 ];
 

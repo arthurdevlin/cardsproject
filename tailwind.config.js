@@ -1,17 +1,15 @@
 // tailwind.config.js
+import forms from "@tailwindcss/forms";
+
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,jsx,ts,tsx}"
-  ],
-   theme: {
+  content: ["./index.html", "./src/**/*.{js,jsx,ts,tsx}"],
+  theme: {
     extend: {
       fontFamily: {
-        sans: ['Inter', 'sans-serif'],
-        heading: ['Poppins', 'sans-serif'],
+        sans: ["Inter", "sans-serif"],
+        heading: ["Poppins", "sans-serif"],
       },
     },
   },
-  plugins: [
-    require('@tailwindcss/forms'),],
-}
+  plugins: [forms],
+};

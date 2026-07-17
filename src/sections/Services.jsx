@@ -8,30 +8,27 @@ const Services = () => {
         <h1 className="text-lg sm:text-2xl md:text-4xl font-bold text-center text-white  mb-1">
           Xplore our Services
         </h1>
-        
+
         <span className="text-center text-sm md:text-lg font-thin  text-white max-w-md">
           ...from a wild friday night to soul-soothing beaches of Lake Malawi...
         </span>
       </div>
       {/* Service cards wrapper */}
       <div className=" w-full flex flex-col justify-center items-center md:px-3  sm:rounded-2xl transition-all duration-300 ">
-        <div className = "flex-col justify-center rounded-2xl  p-4 sm:p-6 w-full">
-          
-            <h1 className="text-2xl font-semibold">Give it a short!</h1>
-            <p>chose from our range of services:</p>
-          </div>
-          {/* widescreen grabber hidden */}
-         
-            <div className="text-xl  justify-center items-center font-bold hidden  py-2 px-4 rounded-2xl flex-col text-white mb-4">
-              Give it a short!
-              <p>chose from our range of services:</p>
-            </div>
-            <div className="place-items-center grid grid-cols-1 sm:grid-cols-3  gap-2 sm:gap-3 md:gap-4 items-stretch ">
-              {cardsInfo.map((item) => (
-                <ServiceCard item={item} key={item.id} />
-              ))}
-            
-          
+        <div className="flex-col justify-center rounded-2xl  p-4 sm:p-6 w-full">
+          <h1 className="text-2xl font-semibold">Give it a short!</h1>
+          <p>chose from our range of services:</p>
+        </div>
+        {/* widescreen grabber hidden */}
+
+        <div className="text-xl  justify-center items-center font-bold hidden  py-2 px-4 rounded-2xl flex-col text-white mb-4">
+          Give it a short!
+          <p>chose from our range of services:</p>
+        </div>
+        <div className="place-items-center grid grid-cols-1 sm:grid-cols-3  gap-2 sm:gap-3 md:gap-4 items-stretch ">
+          {cardsInfo.map((item) => (
+            <ServiceCard item={item} key={item.id} />
+          ))}
         </div>
       </div>
     </section>

@@ -12,7 +12,7 @@ const iconMap = {
 };
 
 const ServiceCard = ({ item }) => {
-  const iconClass = "scale-150 md:scale-200 mb-4 opacity-80 text-indigo-600";
+  const iconClass = "scale-150 md:scale-200 mb-3 relative opacity-70 text-green-950";
   const Icon = iconMap[item.icon];
 
   return (
@@ -22,12 +22,12 @@ const ServiceCard = ({ item }) => {
       className="justify-center flex-col items-center w-3/4 sm:w-full "
     >
       {Icon ? Icon(iconClass) : null}
-      <CardHeader>{item.title}</CardHeader>
+      <CardHeader className="flex w-full justify-center">{item.title}</CardHeader>
       <CardBody className="flex flex-col items-center justify-center px-4">
         <p className="text-center text-sm text-gray-700">{item.description}</p>
         <Button
           variant="wierd"
-          className="mt-4 border border-gray-300 text-sm opacity-90"
+          className="mt-4 border border-green-300 text-sm opacity-90"
         >
           {item.buttonText}
         </Button>

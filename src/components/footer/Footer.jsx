@@ -14,7 +14,7 @@ const footer = () => {
             placeholder="Enter your email"
             className="bg-blue-950 p-2 gap- text-white placeholder:text-blue-200 border border-blue-300 focus:outline-none focus:ring-2 focus:ring-blue-500 m-2 rounded-xl"
           />
-          <Button  variant="primary" onClick={() => alert("Subscribed!")} >
+          <Button variant="primary" onClick={() => alert("Subscribed!")}>
             Subscribe
           </Button>
         </div>
@@ -23,13 +23,13 @@ const footer = () => {
       <div className="grid place-content-center gap-y-4 sm:grid-cols-3 md:grid-cols-5">
         <div className="flex flex-col items-center">
           <div className="items-centre flex flex-col">
-            <div className=" group scale-150 md:scale-150 lg:scale-200 px-1 text-blue-950 text-sm cursor-pointer">
+            <div className=" group scale-150 md:scale-150 lg:scale-200 px-1 text-green-950 text-sm cursor-pointer">
               Xplore <span className="font-extrabold text-2xl ">.MW</span>
               {/* <span className="relative group bg-blue-950 text-white p-1 text-lg rounded-2xl hover:bg-white hover:text-blue-950 hover:shadow-lg hover:shadow-blue-500/50 hover:transition-transform hover:duration-600 ">
             .MW
           </span> */}
             </div>
-            <div className=" flex py-4 gap-3 group scale-120 text-blue-950">
+            <div className=" flex py-4 gap-3 group scale-120 text-green-950">
               <FaFacebook />
               <FaTwitter />
               <FaWhatsapp />
@@ -38,7 +38,9 @@ const footer = () => {
           </div>
         </div>
         <div>
-          <h1 className="cursor-pointer hover:underline">Contacts</h1>
+          <h1 className="cursor-pointer hover:underline text-green-950">
+            Contacts
+          </h1>
           <p>
             P.O BOX 445 <br />
             Chichiri <br />
@@ -54,7 +56,9 @@ const footer = () => {
         </div>
         <div>
           {" "}
-          <h1 className="cursor-pointer hover:underline">Address</h1>
+          <h1 className="cursor-pointer hover:underline text-green-950">
+            Address
+          </h1>
           <p>
             P.O BOX 445 <br />
             Chichiri <br />

@@ -9,11 +9,13 @@ const Hero = () => {
         {/**Hero wrpper*/}
         <div className="flex-col md:justify-center items-center mt-30 mx-8 ">
           {/**Hero text stuff */}
-          <h1 className="font-semibold text-3xl sm:text-3xl md:text-5xl">
+          <h1 className="font-semibold text-3xl sm:text-3xl md:text-5xl leading-tight">
             Welcome. <br />{" "}
-            <span className=" text-gray-300 font-bold">Takulandirani</span>
-            <span className="text-sm md:text-xl sm:text-lg font-bold">
-              <h1>Xplore Malawi with our team</h1>
+            <span className="block text-green-400 font-medium mt-2">
+              Takulandirani
+            </span>
+            <span className="block text-sm md:text-xl sm:text-lg font-semibold mt-3">
+              Xplore Malawi with our team
             </span>
           </h1>
           ---------------------------
@@ -23,7 +25,7 @@ const Hero = () => {
           {" "}
           {/**Hero lg screen */}
           <div className="relative  sm:mt-10 md:30  m-4">
-            <p className="text- hidden md:flex italic">
+            <p className="hidden md:flex font-medium text-base leading-7 text-gray-100">
               Discover the beauty of Malawi with our expert guides and
               unforgettable experiences. <br />
               Make every second count with adventure and fun
