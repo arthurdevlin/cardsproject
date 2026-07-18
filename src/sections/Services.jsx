@@ -4,7 +4,7 @@ import ServiceCard from "../components/cards/ServiceCard";
 const Services = () => {
   return (
     <section className="min-h-screen flex  text-gray-900 items-center flex-col overflow-hidden px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20 py-8 sm:py-12 md:py-16 lg:py-20">
-      <div className="flex flex-col items-center justify-center pt-4 py-4 px-2 sm:px-4 md:px-6 animate-fadeIn bg-blue-950 rounded-2xl shadow-lg shadow-blue-400/50  mb-5 md:mb-10">
+      <div className="flex flex-col items-center justify-center pt-4 py-4 px-2 sm:px-4 md:px-6 animate-fadeIn bg-green-950 rounded-2xl shadow-lg shadow-green-400/50  mb-5 md:mb-10">
         <h1 className="text-lg sm:text-2xl md:text-4xl font-bold text-center text-white  mb-1">
           Xplore our Services
         </h1>

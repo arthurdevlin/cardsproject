@@ -14,8 +14,8 @@ const Button = ({
     secondary:
       "bg-white text-black hover:bg-transparent hover:text-white hover:border hover:border-white",
     wierd:
-      "bg-blue-950 text-white hover:bg-white hover:text-blue-950 hover:border hover:border-blue-950",
-    variant: "ring-2 hover:text-white hover:bg-blue-900",
+      "bg-green-950 text-white hover:bg-white hover:text-green-950 hover:border hover:border-green-950",
+    variant: "ring-2 hover:text-white hover:bg-green-900",
   };
 
   return (

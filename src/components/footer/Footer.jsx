@@ -4,7 +4,7 @@ import Button from "../../Button";
 const footer = () => {
   return (
     <div className="bg-white m-4 sm:m-6 md:m-8 flex flex-col">
-      <div className="flex flex-col  my-4 pt-2 px-4 justify-start bg-blue-950 text-white">
+      <div className="flex flex-col  my-4 pt-2 px-4 justify-start bg-green-950 text-white">
         <h1>Subscribe To Our Newsletter</h1>
         <div className="">
           <input
@@ -12,7 +12,7 @@ const footer = () => {
             name="email"
             id="newsletter-email"
             placeholder="Enter your email"
-            className="bg-blue-950 p-2 gap- text-white placeholder:text-blue-200 border border-blue-300 focus:outline-none focus:ring-2 focus:ring-blue-500 m-2 rounded-xl"
+            className="bg-green-950 p-2 gap- text-white placeholder:text-green-200 border border-green-300 focus:outline-none focus:ring-2 focus:ring-green-500 m-2 rounded-xl"
           />
           <Button variant="primary" onClick={() => alert("Subscribed!")}>
             Subscribe
@@ -25,7 +25,7 @@ const footer = () => {
           <div className="items-centre flex flex-col">
             <div className=" group scale-150 md:scale-150 lg:scale-200 px-1 text-green-950 text-sm cursor-pointer">
               Xplore <span className="font-extrabold text-2xl ">.MW</span>
-              {/* <span className="relative group bg-blue-950 text-white p-1 text-lg rounded-2xl hover:bg-white hover:text-blue-950 hover:shadow-lg hover:shadow-blue-500/50 hover:transition-transform hover:duration-600 ">
+              {/* <span className="relative group bg-green-950 text-white p-1 text-lg rounded-2xl hover:bg-white hover:text-green-950 hover:shadow-lg hover:shadow-green-500/50 hover:transition-transform hover:duration-600 ">
             .MW
           </span> */}
             </div>
@@ -83,7 +83,7 @@ const footer = () => {
         </div>
       </div>
       {/* copryright */}
-      <div className="items-center w-full flex justify-center text-white bg-blue-950">
+      <div className="items-center w-full flex justify-center text-white bg-green-950">
         <p>&copy; {new Date().getFullYear()} XploreMW. All rights reserved.</p>
       </div>
     </div>

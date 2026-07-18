@@ -31,7 +31,7 @@ const Navbar = () => {
                 <li className="relative group " key={item.id}>
                   <a
                     href={item.href}
-                    className="text-white opacity-70 text-sm font-thin group-hover:opacity-100 transition-colors duration-300 active:text-blue-200"
+                    className="text-white opacity-70 text-sm font-thin group-hover:opacity-100 transition-colors duration-300 active:text-green-200"
                   >
                     {item.label}
                     <span className="absolute bg-white w-0 h-0.5 left-0 -bottom-0.5 rounded-3xl transition-all duration-300 group-hover:w-full active:width-full "></span>
@@ -44,7 +44,7 @@ const Navbar = () => {
           {/*Search Bar i will implement later*/}
           {/* <div className="flex rounded-full bg-opacity-80 backdrop-blur-sm justify-between items-center px-3 py-1">
           <input
-            className="bg-transparent border border-white focus:outline-none focus:ring-2 focus:ring-blue-400 rounded-full items-center px-4 py-1 text-sm text-white placeholder-gray-200 transition-colors duration-300  focus:border-blue-400 w-32 md:flex hidden cursor-pointer focus:scale-105 focus:shadow-lg focus:shadow-blue-400/50 focus:transition-transform focus:duration-300 hover:scale-105 hover:shadow-sm hover:shadow-blue-400/50 hover:transition-transform hover:duration-300"
+            className="bg-transparent border border-white focus:outline-none focus:ring-2 focus:ring-green-400 rounded-full items-center px-4 py-1 text-sm text-white placeholder-gray-200 transition-colors duration-300  focus:border-green-400 w-32 md:flex hidden cursor-pointer focus:scale-105 focus:shadow-lg focus:shadow-green-400/50 focus:transition-transform focus:duration-300 hover:scale-105 hover:shadow-sm hover:shadow-green-400/50 hover:transition-transform hover:duration-300"
             type="search"
             name="search"
             id="search"
@@ -56,7 +56,7 @@ const Navbar = () => {
           <div className="flex items-center gap-8">
             <LuSearch className="flex text-white scale-125 transition-transform duration-300 hover:scale-150" />
             <LuMenu className="flex md:hidden text-white scale-125 transition-transform duration-300 hover:scale-150" />
-            <CiDark className="flex text-white bold scale-150 transition-transform duration-300   focus:hover:text-white hover:shadow-xl hover:shadow-blue-400/50 hover:transition-transform hover:duration-300 hover:rounded-full hover:cursor-pointer hover:scale-180" />
+            <CiDark className="flex text-white bold scale-150 transition-transform duration-300   focus:hover:text-white hover:shadow-xl hover:shadow-green-400/50 hover:transition-transform hover:duration-300 hover:rounded-full hover:cursor-pointer hover:scale-180" />
           </div>
 
           {/*Log in button - inline on md and above, only on small screens */}

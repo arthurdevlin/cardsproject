@@ -8,7 +8,7 @@ import CardTitle from "../components/cards/CardTitle";
 
 const Blantyre = () => {
   return (
-    <div className="bg-blue-950 min-h-screen">
+    <div className="bg-green-950 min-h-screen">
       <div className=" items-center relative min-h-screen md:w-full">
         <div className="justify-center relative items-center flex flex-col pt-25 pb-4  text-white w-full px-4">
           <h1 className="sm:text-3xl text-xl md:text-4xl flex">
