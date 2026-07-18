@@ -16,41 +16,13 @@ body {
   margin: 0;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-<<<<<<< HEAD
   color: #111827;
-
-=======
-  color: #11532c;
->>>>>>> ec2a337 (themed to green, router implemented)
   scroll-behavior: smooth;
 }
 
 p {
   font-family: "Roboto", sans-serif;
-<<<<<<< HEAD
   font-weight: 100;
   line-height: 1.75;
   font-size: 15px;
 }
-=======
-  font-weight: 400;
-  line-height: 1.75;
-  font-size: 15px;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  letter-spacing: 0.01em;
-}
-
-a,
-button {
-  font-weight: 500;
-}
->>>>>>> ec2a337 (themed to green, router implemented)
