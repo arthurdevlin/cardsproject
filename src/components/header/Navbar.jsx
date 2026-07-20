@@ -1,6 +1,7 @@
 import { LuSearch, LuMenu } from "react-icons/lu";
-import { CiDark } from "react-icons/ci";
+
 import Button from "../../Button";
+import { useState } from "react";
 
 //mapped my navitems to an array of objects for better scalability and maintainability
 
@@ -12,63 +13,85 @@ const navLinks = [
 ];
 
 const Navbar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
-    <>
-      <nav className="fixed z-50 flex w-full items-center p-8 top-0">
-        {/*Logo Section*/}
-        <div className="flex  px-1  text-white text-sm cursor-pointer">
-          Xplore <span className="font-extrabold text-2xl ">.MW</span>
-          {/* <span className="relative group bg-blue-950 text-white p-1 text-lg rounded-2xl hover:bg-white hover:text-blue-950 hover:shadow-lg hover:shadow-blue-500/50 hover:transition-transform hover:duration-600 ">
-            .MW
-          </span> */}
+    <nav className="fixed inset-x-0 top-0 z-50 bg-green-950/95 backdrop-blur-xl border-b border-white/10">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+        <a
+          href="#top"
+          className="flex items-center gap-2 text-white text-base font-medium hover:text-green-300 transition-colors duration-200"
+        >
+          <span className="text-lg">Xplore</span>
+          <span className="font-extrabold text-2xl">.MW</span>
+        </a>
+
+        <div className="hidden md:flex items-center gap-12">
+          <ul className="flex items-center gap-8">
+            {navLinks.map((item) => (
+              <li className="relative group" key={item.id}>
+                <a
+                  href={item.href}
+                  className="text-white opacity-80 text-sm font-light transition-opacity duration-200 hover:opacity-100"
+                >
+                  {item.label}
+                  <span className="absolute left-0 -bottom-1 h-0.5 w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
+                </a>
+              </li>
+            ))}
+          </ul>
         </div>
 
-        <div className="ml-auto flex items-center gap-6">
-          {/*Menu Section */}
-          <div className="hidden md:flex justify-between items-center  px-6 py-2 rounded-full h-9 z-50 ">
-            <ul className="flex gap-6 items-center ">
+        <div className="flex items-center gap-4">
+          <button
+            type="button"
+            className="hidden md:inline-flex items-center justify-center rounded-full border border-white/10 bg-white/5 px-4 py-2 text-white transition hover:border-white/20 hover:bg-white/10"
+          >
+            <LuSearch className="h-5 w-5" />
+          </button>
+
+          <div className="hidden md:flex items-center gap-4">
+            <Button>Email Us</Button>
+            <Button variant="secondary">Bookings</Button>
+          </div>
+
+          <button
+            type="button"
+            aria-label="Toggle navigation menu"
+            className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5 text-white transition hover:border-white/20 hover:bg-white/10 md:hidden"
+            onClick={() => setMenuOpen((prev) => !prev)}
+          >
+            <LuMenu className="h-6 w-6" />
+          </button>
+        </div>
+      </div>
+
+      {menuOpen && (
+        <div className="md:hidden border-t border-white/10 bg-green-950/95">
+          <div className="mx-auto max-w-7xl px-6 py-4">
+            <ul className="flex flex-col gap-4">
               {navLinks.map((item) => (
-                <li className="relative group " key={item.id}>
+                <li key={item.id}>
                   <a
                     href={item.href}
-                    className="text-white opacity-70 text-sm font-thin group-hover:opacity-100 transition-colors duration-300 active:text-green-200"
+                    className="block rounded-2xl px-4 py-3 text-white text-sm font-medium transition-colors duration-200 hover:bg-white/10"
+                    onClick={() => setMenuOpen(false)}
                   >
                     {item.label}
-                    <span className="absolute bg-white w-0 h-0.5 left-0 -bottom-0.5 rounded-3xl transition-all duration-300 group-hover:w-full active:width-full "></span>
                   </a>
                 </li>
               ))}
             </ul>
-          </div>
-
-          {/*Search Bar i will implement later*/}
-          {/* <div className="flex rounded-full bg-opacity-80 backdrop-blur-sm justify-between items-center px-3 py-1">
-          <input
-            className="bg-transparent border border-white focus:outline-none focus:ring-2 focus:ring-green-400 rounded-full items-center px-4 py-1 text-sm text-white placeholder-gray-200 transition-colors duration-300  focus:border-green-400 w-32 md:flex hidden cursor-pointer focus:scale-105 focus:shadow-lg focus:shadow-green-400/50 focus:transition-transform focus:duration-300 hover:scale-105 hover:shadow-sm hover:shadow-green-400/50 hover:transition-transform hover:duration-300"
-            type="search"
-            name="search"
-            id="search"
-            placeholder="Search..."
-          />
-        </div> */}
-
-          {/*Icons only visible to small screens*/}
-          <div className="flex items-center gap-8">
-            <LuSearch className="flex text-white scale-125 transition-transform duration-300 hover:scale-150" />
-            <LuMenu className="flex md:hidden text-white scale-125 transition-transform duration-300 hover:scale-150" />
-            <CiDark className="flex text-white bold scale-150 transition-transform duration-300   focus:hover:text-white hover:shadow-xl hover:shadow-green-400/50 hover:transition-transform hover:duration-300 hover:rounded-full hover:cursor-pointer hover:scale-180" />
-          </div>
-
-          {/*Log in button - inline on md and above, only on small screens */}
-          <div className="hidden md:flex items-center">
-            <Button className="">Email Us</Button>{" "}
-            <Button className="ml-4" variant="secondary">
-              Bookings
-            </Button>
+            <div className="mt-4 flex flex-col gap-3">
+              <Button className="w-full">Email Us</Button>
+              <Button className="w-full" variant="secondary">
+                Bookings
+              </Button>
+            </div>
           </div>
         </div>
-      </nav>
-    </>
+      )}
+    </nav>
   );
 };
 
