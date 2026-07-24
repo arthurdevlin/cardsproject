@@ -3,33 +3,27 @@ import ServiceCard from "../components/cards/ServiceCard";
 
 const Services = () => {
   return (
-    <section className="min-h-screen flex  text-gray-900 items-center flex-col overflow-hidden px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20 py-8 sm:py-12 md:py-16 lg:py-20">
-      <div className="flex flex-col items-center justify-center pt-4 py-4 px-2 sm:px-4 md:px-6 animate-fadeIn bg-green-950 rounded-2xl shadow-lg shadow-green-400/50  mb-5 md:mb-10">
-        <h1 className="text-lg sm:text-2xl md:text-4xl font-bold text-center text-white  mb-1">
-          Xplore our Services
-        </h1>
-
-        <span className="text-center text-sm md:text-lg font-thin  text-white max-w-md">
-          ...from a wild friday night to soul-soothing beaches of Lake Malawi...
-        </span>
+    <section
+      id="services"
+      className="flex min-h-screen flex-col items-center overflow-hidden px-4 py-8 text-slate-700 sm:px-6 sm:py-12 md:px-8 md:py-16 lg:px-12 lg:py-20 xl:px-16 2xl:px-20"
+    >
+      <div className="section-shell mb-6 flex w-full max-w-7xl flex-col items-start justify-center px-5 py-6 sm:px-6 md:px-8">
+        <p className="text-sm font-semibold uppercase tracking-[0.3em] text-emerald-600">
+          Services
+        </p>
+        <h2 className="mt-2 text-2xl font-semibold text-slate-900 sm:text-3xl">
+          Thoughtful experiences with a clear point of view
+        </h2>
+        <p className="mt-3 max-w-2xl text-sm leading-7 text-slate-600 sm:text-base">
+          From relaxed escapes to curated adventures, each offering is designed
+          to feel effortless and refined.
+        </p>
       </div>
-      {/* Service cards wrapper */}
-      <div className=" w-full flex flex-col justify-center items-center md:px-3  sm:rounded-2xl transition-all duration-300 ">
-        <div className="flex-col justify-center rounded-2xl  p-4 sm:p-6 w-full">
-          <h1 className="text-2xl font-semibold">Give it a short!</h1>
-          <p>chose from our range of services:</p>
-        </div>
-        {/* widescreen grabber hidden */}
 
-        <div className="text-xl  justify-center items-center font-bold hidden  py-2 px-4 rounded-2xl flex-col text-white mb-4">
-          Give it a short!
-          <p>chose from our range of services:</p>
-        </div>
-        <div className="place-items-center grid grid-cols-1 sm:grid-cols-3  gap-2 sm:gap-3 md:gap-4 items-stretch ">
-          {cardsInfo.map((item) => (
-            <ServiceCard item={item} key={item.id} />
-          ))}
-        </div>
+      <div className="grid w-full max-w-7xl grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        {cardsInfo.map((item) => (
+          <ServiceCard item={item} key={item.id} />
+        ))}
       </div>
     </section>
   );

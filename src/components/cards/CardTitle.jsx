@@ -1,7 +1,9 @@
-
-
 export const CardTitle = ({ children, className = "" }) => {
-  return <h3 className={`text-2xl font-bold mb-2 ${className}`}>{children}</h3>;
+  return (
+    <h3 className={`text-xl font-semibold mb-2 text-white ${className}`}>
+      {children}
+    </h3>
+  );
 };
 
 export default CardTitle;

@@ -3,33 +3,30 @@ import Button from "../../Button";
 
 const footer = () => {
   return (
-    <div className="bg-white m-4 sm:m-6 md:m-8 flex flex-col">
-      <div className="flex flex-col  my-4 pt-2 px-4 justify-start bg-green-950 text-white">
-        <h1>Subscribe To Our Newsletter</h1>
-        <div className="">
+    <div className="m-4 flex flex-col rounded-[2rem] border border-emerald-100 bg-white p-4 shadow-[0_10px_35px_rgba(15,23,42,0.05)] sm:m-6 md:m-8">
+      <div className="my-4 flex flex-col justify-start rounded-[1.5rem] border border-emerald-100 bg-emerald-50 px-4 py-5 text-slate-800">
+        <h1 className="text-lg font-semibold">Subscribe To Our Newsletter</h1>
+        <div className="mt-3 flex flex-col gap-3 sm:flex-row">
           <input
             type="email"
             name="email"
             id="newsletter-email"
             placeholder="Enter your email"
-            className="bg-green-950 p-2 gap- text-white placeholder:text-green-200 border border-green-300 focus:outline-none focus:ring-2 focus:ring-green-500 m-2 rounded-xl"
+            className="rounded-xl border border-emerald-200 bg-white p-3 text-slate-700 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-emerald-400"
           />
           <Button variant="primary" onClick={() => alert("Subscribed!")}>
             Subscribe
           </Button>
         </div>
       </div>
-      {/* footerstuff */}
+
       <div className="grid place-content-center gap-y-4 sm:grid-cols-3 md:grid-cols-5">
         <div className="flex flex-col items-center">
           <div className="items-centre flex flex-col">
-            <div className=" group scale-150 md:scale-150 lg:scale-200 px-1 text-green-950 text-sm cursor-pointer">
-              Xplore <span className="font-extrabold text-2xl ">.MW</span>
-              {/* <span className="relative group bg-green-950 text-white p-1 text-lg rounded-2xl hover:bg-white hover:text-green-950 hover:shadow-lg hover:shadow-green-500/50 hover:transition-transform hover:duration-600 ">
-            .MW
-          </span> */}
+            <div className="group scale-150 cursor-pointer px-1 text-sm text-emerald-700 md:scale-150 lg:scale-200">
+              Xplore <span className="text-2xl font-extrabold">.MW</span>
             </div>
-            <div className=" flex py-4 gap-3 group scale-120 text-green-950">
+            <div className="group flex gap-3 py-4 text-emerald-600">
               <FaFacebook />
               <FaTwitter />
               <FaWhatsapp />
@@ -38,28 +35,27 @@ const footer = () => {
           </div>
         </div>
         <div>
-          <h1 className="cursor-pointer hover:underline text-green-950">
+          <h1 className="cursor-pointer text-slate-900 hover:underline">
             Contacts
           </h1>
-          <p>
+          <p className="mt-2 text-sm text-slate-600">
             P.O BOX 445 <br />
             Chichiri <br />
             Blantyre 4 <br />
             Malawi
           </p>
-          <p className="cursor-pointer hover:underline">
+          <p className="mt-2 cursor-pointer text-sm text-slate-600 hover:underline">
             Email: xploremw@gmail.com
           </p>
-          <p className="cursor-pointer hover:underline">
+          <p className="cursor-pointer text-sm text-slate-600 hover:underline">
             Cell: +265 887 353 999
           </p>
         </div>
         <div>
-          {" "}
-          <h1 className="cursor-pointer hover:underline text-green-950">
+          <h1 className="cursor-pointer text-slate-900 hover:underline">
             Address
           </h1>
-          <p>
+          <p className="mt-2 text-sm text-slate-600">
             P.O BOX 445 <br />
             Chichiri <br />
             Blantyre 4 <br />
@@ -67,23 +63,27 @@ const footer = () => {
           </p>
         </div>
         <div>
-          <h1 className="cursor-pointer hover:underline">Our Partiners</h1>
-          <p>
+          <h1 className="cursor-pointer text-slate-900 hover:underline">
+            Our Partners
+          </h1>
+          <p className="mt-2 text-sm text-slate-600">
             JayJnr <br />
             Travel With Mervis
-            <br /> Sunbird Nkopola <br /> Blues Bar & Restuarant
+            <br /> Sunbird Nkopola <br /> Blues Bar & Restaurant
           </p>
         </div>
-        <div className="">
-          <h1 className="cursor-pointer hover:underline">Customer Support</h1>
-          <p>FAQs</p>
-          <p>Weather Forecast</p>
-          <p>Security</p>
-          <p>Help-Desk</p>
+        <div>
+          <h1 className="cursor-pointer text-slate-900 hover:underline">
+            Customer Support
+          </h1>
+          <p className="mt-2 text-sm text-slate-600">FAQs</p>
+          <p className="text-sm text-slate-600">Weather Forecast</p>
+          <p className="text-sm text-slate-600">Security</p>
+          <p className="text-sm text-slate-600">Help-Desk</p>
         </div>
       </div>
-      {/* copryright */}
-      <div className="items-center w-full flex justify-center text-white bg-green-950">
+
+      <div className="mt-4 flex w-full items-center justify-center rounded-[1rem] bg-emerald-50 px-4 py-3 text-sm text-slate-600">
         <p>&copy; {new Date().getFullYear()} XploreMW. All rights reserved.</p>
       </div>
     </div>

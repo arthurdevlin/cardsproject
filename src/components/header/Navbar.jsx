@@ -29,10 +29,10 @@ const Navbar = () => {
         <div className="hidden md:flex items-center gap-12">
           <ul className="flex items-center gap-8">
             {navLinks.map((item) => (
-              <li className="relative group" key={item.id}>
+              <li className="relative group " key={item.id}>
                 <a
                   href={item.href}
-                  className="text-white opacity-80 text-sm font-light transition-opacity duration-200 hover:opacity-100"
+                  className="text-white opacity-80 text-sm font-light transition-opacity duration-200 hover:opacity-100 focus:text-green-300"
                 >
                   {item.label}
                   <span className="absolute left-0 -bottom-1 h-0.5 w-0 bg-white transition-all duration-300 group-hover:w-full"></span>

@@ -7,15 +7,16 @@ const Button = ({
   ...props
 }) => {
   const baseStyles =
-    "px-6 py-1 cursor-pointer rounded-full transition-all duration-200 whitespace-nowrap focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-white hover:shadow-lg";
+    "px-6 py-2 cursor-pointer rounded-full border transition-all duration-200 whitespace-nowrap font-medium tracking-[0.02em] focus:outline-none focus:ring-1 focus:ring-emerald-400/50 hover:-translate-y-0.5";
 
   const variants = {
-    primary: "border border-white text-white hover:bg-white hover:text-black",
+    primary:
+      "border-emerald-600 bg-emerald-600 text-white hover:bg-emerald-700",
     secondary:
-      "bg-white text-black hover:bg-transparent hover:text-white hover:border hover:border-white",
-    wierd:
-      "bg-green-950 text-white hover:bg-white hover:text-green-950 hover:border hover:border-green-950",
-    variant: "ring-2 hover:text-white hover:bg-green-900",
+      "border-emerald-200 bg-white text-emerald-700 hover:bg-emerald-50",
+    wierd: "border-amber-300 bg-amber-50 text-amber-800 hover:bg-amber-100",
+    variant:
+      "border-emerald-400 bg-emerald-50 text-emerald-700 hover:bg-emerald-100",
   };
 
   return (

@@ -5,16 +5,16 @@ import GlassCard from "../components/cards/GlassCard";
 const Hero = () => {
   return (
     <div className='flex bg-[url("./images/beach2.jpg")] bg-cover bg-no-repeat bg-center w-full '>
-      <div className=" bg-black/50 w-full min-h-screen text-white ">
+      <div className="w-full min-h-screen bg-slate-950/60 text-white backdrop-brightness-75">
         {/**Hero wrpper*/}
         <div className="flex-col md:justify-center items-center mt-30 mx-8 ">
           {/**Hero text stuff */}
-          <h1 className="font-semibold text-3xl sm:text-3xl md:text-5xl leading-tight">
+          <h1 className="text-3xl font-semibold leading-tight sm:text-3xl md:text-5xl">
             Welcome. <br />{" "}
-            <span className="block text-green-400 font-medium mt-2">
+            <span className="mt-2 block font-medium text-emerald-300">
               Takulandirani
             </span>
-            <span className="block text-sm md:text-xl sm:text-lg font-semibold mt-3">
+            <span className="mt-3 block text-sm font-semibold text-slate-100 sm:text-lg md:text-xl">
               Xplore Malawi with our team
             </span>
           </h1>
@@ -25,7 +25,7 @@ const Hero = () => {
           {" "}
           {/**Hero lg screen */}
           <div className="relative  sm:mt-10 md:30  m-4">
-            <p className="hidden md:flex font-medium text-base leading-7 text-gray-100">
+            <p className="hidden md:flex text-base font-medium leading-7 text-slate-200">
               Discover the beauty of Malawi with our expert guides and
               unforgettable experiences. <br />
               Make every second count with adventure and fun
@@ -37,8 +37,8 @@ const Hero = () => {
                   <Button variant="secondary">Sign Up</Button>
                 </div>
               </div>
-              <div className="bg-amber-50/20 hidden sm:flex flex-col absolute right-0 rounded-3xl px-4 text-sm p-2">
-                <h1 className="justify-center w-50 flex font-bold">
+              <div className="absolute right-0 hidden flex-col rounded-[1.4rem] border border-white/10 bg-slate-900/70 px-4 p-2 text-sm shadow-[0_20px_60px_rgba(2,8,23,0.35)] sm:flex">
+                <h1 className="flex w-50 justify-center font-semibold text-amber-200">
                   TRENDING EVENTS
                 </h1>
 

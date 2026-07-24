@@ -6,16 +6,19 @@ const Card = ({
   hover = true,
   padding = "normal",
 }) => {
-  const baseStyles = "rounded-lg shadow-md transition-all duration-300";
-  //variants for the card component that can be used to change the background color and border color
+  const baseStyles =
+    "rounded-[1.25rem] border border-emerald-100 bg-white shadow-[0_8px_24px_rgba(15,23,42,0.05)] transition-all duration-300";
   const variants = {
-    default: "bg-white border border-green-200",
-    primary: " flex pt-4 items-center border bg-white border-green-200",
-    success: "bg-green-100 border border-green-200",
-    dark: "bg-gray-800 text-white border border-gray-700",
+    default: "bg-white text-slate-700",
+    primary:
+      "flex pt-4 items-center border border-emerald-100 bg-white text-slate-700",
+    success: "bg-emerald-50 border border-emerald-200 text-slate-700",
+    dark: "bg-slate-900 text-white border border-slate-200",
   };
 
-  const hoverStyles = hover ? "hover:shadow-xl hover:translate-y-1" : "";
+  const hoverStyles = hover
+    ? "hover:-translate-y-1 hover:shadow-[0_12px_30px_rgba(16,185,129,0.12)]"
+    : "";
 
   const paddingStyles = {
     none: "p-0",

@@ -56,7 +56,7 @@ export const cardsData = [
     // Minimal data - only title
     price: "MWK15000",
     category: "Culture",
-    image:"",
+    image:"https://www.outlooktravelmag.com/media/malawi-1-1663336232.profileImage.2x-1-1-jpg-webp-webp.webp",
     description:
       "Watch the traditional dances offered by the rich cultures of Malawi",
   },
