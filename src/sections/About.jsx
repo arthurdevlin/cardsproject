@@ -27,7 +27,7 @@ const highlights = [
     description:
       "A more polished way to experience the journey, with comfort and clarity at the center.",
     tag: "Approach",
-    link: "https://d2vbr83hnyiux1.cloudfront.net/image/975050285728/image_6rokdd6sm92598400ro86b5v3q/-FWEBP-Ro:5,w:1920,h:1440,n:default"
+    link: "https://d2vbr83hnyiux1.cloudfront.net/image/975050285728/image_6rokdd6sm92598400ro86b5v3q/-FWEBP-Ro:5,w:1920,h:1440,n:default",
   },
 ];
 
@@ -78,7 +78,11 @@ const About = () => {
                       <p className="max-w-md text-sm leading-7 text-slate-600 sm:text-base">
                         {item.description}
                       </p>
-                      <img src={item.link} alt="image here"  className="scale-100 rounded-2xl w-full"/>
+                      <img
+                        src={item.link}
+                        alt={item.title}
+                        className="h-56 w-full rounded-2xl object-cover sm:h-64 lg:h-72"
+                      />
                     </div>
                   </div>
                 </CarouselItem>

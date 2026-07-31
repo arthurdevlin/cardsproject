@@ -74,7 +74,7 @@ export const CarouselPrevious = ({ className = "" }) => {
       type="button"
       onClick={() => setActiveIndex((current) => Math.max(current - 1, 0))}
       disabled={activeIndex <= 0}
-      className={`rounded-full px-3 py-2 text-sm text-white transition hover:bg-white/10 disabled:cursor-not-allowed disabled:opacity-40 ${className}`}
+      className={`rounded-full border border-emerald-200 bg-white px-3 py-2 text-sm text-slate-700 shadow-sm transition hover:bg-emerald-50 hover:text-emerald-700 disabled:cursor-not-allowed disabled:opacity-50 ${className}`}
       aria-label="Previous slide"
     >
       ←
@@ -93,7 +93,7 @@ export const CarouselNext = ({ className = "" }) => {
         setActiveIndex((current) => Math.min(current + 1, totalItems - 1))
       }
       disabled={activeIndex >= totalItems - 1}
-      className={`rounded-full px-3 py-2 text-sm text-white transition hover:bg-white/10 disabled:cursor-not-allowed disabled:opacity-40 ${className}`}
+      className={`rounded-full border border-emerald-200 bg-white px-3 py-2 text-sm text-slate-700 shadow-sm transition hover:bg-emerald-50 hover:text-emerald-700 disabled:cursor-not-allowed disabled:opacity-50 ${className}`}
       aria-label="Next slide"
     >
       →

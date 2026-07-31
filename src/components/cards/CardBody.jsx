@@ -1,7 +1,7 @@
 const CardBody = ({ children, className = "" }) => {
   return (
     <div
-      className={`text-sm md:text-[15px] leading-7 text-slate-300 ${className}`}
+      className={`text-sm leading-7 text-slate-600 md:text-[15px] ${className}`}
     >
       {children}
     </div>
